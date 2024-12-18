@@ -28,5 +28,6 @@ $container-max-heights: (
 }
 
 .map-container {
+  z-index: 0;
   max-width: $max-content-width;
 }

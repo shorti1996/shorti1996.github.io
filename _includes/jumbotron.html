@@ -29,8 +29,8 @@
 
         window.addEventListener('scroll', function () {
             if (window.scrollY > top) {
-                console.log('top', top);
-                console.log('minTop', minTop);
+                // console.log('top', top);
+                // console.log('minTop', minTop);
                 navbar.style.top = '-' + Math.min(top, minTop) + 'px';
                 navbar.classList.add('stuck');
             } else {
