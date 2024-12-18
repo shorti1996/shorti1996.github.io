@@ -8,3 +8,7 @@ $container-max-widths: (
         xl: 1200px,
         xxl: 1400px
 );
+
+@mixin transition-smooth() {
+  transition: all 1s ease-in-out; // Smooth transition when adding classes
+}

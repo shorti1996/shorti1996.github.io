@@ -1,4 +1,6 @@
 .img-hero {
+  @include transition-smooth();
+
   max-width: 100%;
   min-width: 100%;
   //max-height: 30vh;
@@ -23,6 +25,8 @@
 }
 
 .jumbo-header {
+  @include transition-smooth();
+
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -35,25 +39,31 @@
 }
 
 .sticky-top-scroll {
-  position: relative; /* Default */
-  z-index: 10; /* Ensure visibility above content */
-  transition: all 0.3s ease-in-out; /* Smooth transition when adding classes */
+  position: relative;
+  z-index: 10;
+  @include transition-smooth();
 }
 
 .stuck {
+  @include transition-smooth();
+
   position: sticky !important;
   //top: -50px;
-  z-index: 20; /* Higher to ensure it overlaps other elements */
-  background: white; /* Optional, adjust as per your design */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better effect */
+  z-index: 20;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 
   @media (max-width: map-get($container-max-widths, 'md')) {
     .nav-title {
       opacity: 0;
     }
   }
+
+  .img-hero {
+    filter: brightness(0.5);
+  }
 }
 
-p[id]{
+p[id] {
   scroll-margin-top: 150px;
 }
