@@ -15,8 +15,10 @@
     var mapOptions = {
         // center: [78.65513, 16.32770],
         center: [51.80193, 20.50032],
-        zoom: 13,
-        scrollWheelZoom: false
+        zoom: !L.Browser.mobile ? 13 : 12,
+        scrollWheelZoom: false,
+        dragging: !L.Browser.mobile,
+        tap: !L.Browser.mobile
     }
     // Creating a map object
     var map = new L.map('map', mapOptions);
