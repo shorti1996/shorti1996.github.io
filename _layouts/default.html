@@ -14,7 +14,7 @@
 </head>
 <body data-bs-spy="scroll"
       data-bs-target="#mainNavbar"
-      id="homeAnchor">
+      data-bs-root-margin="0px 0px -40% 0px">
 <!--<header>-->
 <!--    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>-->
 <!--    <nav>-->
@@ -25,7 +25,8 @@
 <!--    </nav>-->
 <!--    {% include nav2.html %}-->
 <!--</header>-->
-<main class="text-center">
+<main class="text-center"
+      id="homeAnchor">
     {% include jumbotron.html %}
 
     <hr class="border-bottom border-2 my-5"/>
