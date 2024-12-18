@@ -19,7 +19,29 @@
     </symbol>
 </svg>
 
-<div class="img-fluid jumbo-responsive d-flex justify-content-center position-relative mb-5">
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbar = document.querySelector('.sticky-top-scroll'); // Select the navbar element
+        const triggerHeight = navbar.offsetHeight; // Get the height of the navbar
+        const top = navbar.offsetHeight * 0.65;
+        const minTop = (window.innerHeight * (1 - 0.05));
+
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > top) {
+                console.log('top', top);
+                console.log('minTop', minTop);
+                navbar.style.top = '-' + Math.min(top, minTop) + 'px';
+                navbar.classList.add('stuck');
+            } else {
+                navbar.style.top = '';
+                navbar.classList.remove('stuck');
+            }
+        });
+    });
+</script>
+
+<div class="img-fluid jumbo-responsive d-flex justify-content-center position-relative mb-5 sticky-top-scroll">
     {% include nav2.html %}
 
     <div class="jumbo-content text-center my-auto">
