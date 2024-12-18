@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet"
+          href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">
+    </script>
+</head>
+
+<p class="display-4 my-4" id="map-title">
+    Lokalizacja
+</p>
+
+<div class="card col-md-10 mx-md-auto map-container">
+    <div id="map"
+         class="map-responsive"></div>
+</div>
+
+<script>
+    // Creating map options
+    var mapOptions = {
+        // center: [17.385044, 78.486671],
+        // 78.65479/16.32888
+        // 16/78.65513/16.32770
+        center: [78.65513, 16.32770],
+        zoom: 14,
+        scrollWheelZoom: false
+    }
+    // Creating a map object
+    var map = new L.map('map', mapOptions);
+    // Creating a Layer object
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    // Adding layer to the map
+    map.addLayer(layer);
+
+    let marker = new L.Marker([78.65513, 16.32770]);
+    marker.addTo(map);
+</script>
