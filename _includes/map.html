@@ -5,11 +5,7 @@
     </script>
 </head>
 
-<p class="display-4 my-4" id="mapTitle">
-    Lokalizacja
-</p>
-
-<div class="card col-md-10 mx-md-auto map-container">
+<div class="card col-md-10 mx-md-auto map-container my-3">
     <div id="map"
          class="map-responsive"></div>
 </div>
@@ -17,11 +13,9 @@
 <script>
     // Creating map options
     var mapOptions = {
-        // center: [17.385044, 78.486671],
-        // 78.65479/16.32888
-        // 16/78.65513/16.32770
-        center: [78.65513, 16.32770],
-        zoom: 14,
+        // center: [78.65513, 16.32770],
+        center: [51.80193, 20.50032],
+        zoom: 13,
         scrollWheelZoom: false
     }
     // Creating a map object
@@ -31,6 +25,9 @@
     // Adding layer to the map
     map.addLayer(layer);
 
-    let marker = new L.Marker([78.65513, 16.32770]);
+    let marker = new L.Marker([51.807968, 20.474235]);
     marker.addTo(map);
+
+    let marker2 = new L.Marker([51.800055, 20.528423]);
+    marker2.addTo(map);
 </script>

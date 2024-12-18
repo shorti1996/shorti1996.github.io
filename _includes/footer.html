@@ -1,31 +1,27 @@
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const currentTimeElement = document.getElementById('current-time');
-        const now = new Date();
-        const year = now.getFullYear();
-        // dd-mm-yyyy
-        const date = now.toLocaleDateString('en-GB');
-        currentTimeElement.textContent = `© ${year} {{ site.title }}`;
-    });
-</script>
-
-<footer>
-    <div class="container">
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#"
-                                        class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#"
-                                        class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#"
-                                        class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#"
-                                        class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#"
-                                        class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-            <p id="current-time"
-               class="text-center text-body-secondary"></p>
-        </footer>
-    </div>
+<!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    {% for socloc in site.social %}
+    {% if socloc[1] %}
+    {% if socloc[0] == 'email' %}
+    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o"
+           ><span class="label">E-mail</span></a></li>
+    {% else %}
+    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"
+           ><span class="label">{{ socloc[0] }}</span></a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="copyright">
+    <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+    {% if site.first_published %}
+      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+    {% endif %}
+    {{ thisyear }}
+    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+  </ul>
 </footer>
