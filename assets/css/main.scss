@@ -14,7 +14,8 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 @import "/assets/bootstrap/css/bootstrap-utilities.css";
 @import "/assets/bootstrap/css/bootstrap-reboot.css";
 @import "external/font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 @import "common";
 @import 'map';
