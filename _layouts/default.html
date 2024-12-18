@@ -3,11 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="stylesheet"
+          href="{{ '/assets/css/main.css' | relative_url }}"/>
     <script src="{{ '/assets/bootstrap/js/bootstrap.js' | relative_url }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body data-bs-spy="scroll"
+      data-bs-target="#mainNavbar"
+      id="homeAnchor">
 <!--<header>-->
 <!--    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>-->
 <!--    <nav>-->
@@ -29,7 +33,7 @@
 
     {% include schedule.html %}
 
-<!--    {{ content }}-->
+    <!--    {{ content }}-->
 </main>
 {% include footer.html %}
 </body>
