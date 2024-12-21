@@ -4,9 +4,10 @@ layout: landing
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h2>{{ site.title }}</h2>
+        <!--        TODO: not capitalize for "I"-->
+        <h2 style="font-family: 'Gwendolyn'; text-transform: capitalize;">{{ site.title }}</h2>
         <!--        <p>{{ site.description | markdownify }}</p>-->
-        <p>Coś trzeba tutaj</p>
+        <p>14 czerwca 2025</p>
         <!--        <ul class="actions">-->
         <!--            <li><a href="#"-->
         <!--                   class="button special">Activate</a></li>-->
@@ -20,6 +21,7 @@ layout: landing
 <section id="one"
          class="wrapper style1 special">
     <div class="inner">
+        <!--        TODO: wiekszy font na cala stronke -->
         <header class="major">
             <h2>Drodzy goście</h2>
             <p>Sandra Turlińska oraz Rafał Kozieł wraz z Rodzicami mają zaszczyt zaprosić na swój Ślub,
@@ -30,12 +32,13 @@ layout: landing
                 Po ceremonii zapraszamy do wspólnego świętowania.
                 <br>
                 Przyjęcie weselne odbędzie się w Pałacu&nbsp;Chojnata w&nbsp;Woli-Chojnata&nbsp;59.</p>
+            <p><b>Drodzy Goście uprzejmie prosimy o potwierdzenie przybycia do dnia 30 kwietnia 2025 roku.</b></p>
         </header>
-        <ul class="icons major">
-            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-            <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-            <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-        </ul>
+        <!--        <ul class="icons major">-->
+        <!--            <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>-->
+        <!--            <li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>-->
+        <!--            <li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>-->
+        <!--        </ul>-->
     </div>
 </section>
 
@@ -48,132 +51,149 @@ layout: landing
 
 <section id="mapSection"
          class="wrapper alt style2">
+    <!--    <section class="spotlight">-->
+    <!--        <div class="image">-->
+    <!--            {% include map.html %}-->
+    <!--        </div>-->
+    <!--        <div class="content">-->
+    <!--            <h2>Lokalizacja</h2>-->
+    <!--            <div class="d-flex flex-column gap-2 mb-5">-->
+    <!--                <b>Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej w&nbsp;Białej&nbsp;Rawskiej</b>-->
+    <!--                <div class="d-flex flex-lg-row flex-column gap-1 justify-content-between align-items-center">-->
+    <!--                    plac Kościelny 4, 96-230 Biała Rawska-->
+    <!--                    <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"-->
+    <!--                       class="button small">Google maps</a>-->
+    <!--                </div>-->
+    <!--                Po ceremonii zapraszamy do wspólnego świętowania-->
+    <!--                <div class="d-flex flex-lg-row flex-column gap-1 justify-content-between align-items-center">-->
+    <!--                    Pałac Chojnata, Wola-Chojnata 59-->
+    <!--                    <a href="https://maps.app.goo.gl/1T3CPU9SUdqD13UW7"-->
+    <!--                       class="button small">Google maps</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <section id="churchImg"
+             class="img-bg-responsive wrapper style4">
+        <div class="inner">
+        </div>
+    </section>
+
+
     <section class="spotlight">
         <div class="image">
             {% include map.html %}
         </div>
         <div class="content">
-            <h2>Lokalizacja</h2>
+            <h2>Ślub</h2>
             <div class="d-flex flex-column gap-2 mb-5">
-                <b>Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej w&nbsp;Białej&nbsp;Rawskiej</b>
-                <div class="d-flex flex-lg-row flex-column gap-1 justify-content-between align-items-center">
-                    plac Kościelny 4, 96-230 Biała Rawska
-                    <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
-                       class="button small">Google maps</a>
-                </div>
-                Po ceremonii zapraszamy do wspólnego świętowania
-                <div class="d-flex flex-lg-row flex-column gap-1 justify-content-between align-items-center">
-                    Pałac Chojnata, Wola-Chojnata 59
-                    <a href="https://maps.app.goo.gl/1T3CPU9SUdqD13UW7"
-                       class="button small">Google maps</a>
+                Ślub odbędzie się 14 czerwca 2025 roku o godzinie 16:00 w Sanktuarium Matki Bożej Miłosiernej w Białej
+                Rawskiej.
+                <!--                <b>Sanktuarium Matki&nbsp;Bożej&nbsp;Miłosiernej w&nbsp;Białej&nbsp;Rawskiej</b>-->
+                <div class="d-flex flex-column gap-1 justify-content-between align-self-lg-start align-items-center">
+                    <!--                    TODO: dziwny margines -->
+                    <!--                    TODO: wiekszy font ogolnie na stronce -->
+                    Adres: plac Kościelny 4, 96-230 Biała Rawska
+                    <div class="d-flex flex-column gap-4 mt-4 flex-md-row">
+                        <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
+                           class="button small">Google maps</a>
+                        <a href="https://maps.app.goo.gl/BdDiE9PHvxGX4gJx5"
+                           class="button small">Sanktuarium</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="spotlight">
-        <div class="image"><img src="/assets/imgs/pic02.jpg"
-                                alt=""/></div>
-        <div class="content">
-            <h2>Tortor dolore feugiat<br/>
-                elementum magna</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
-                aenean mi ligula.</p>
+
+    <section id="palaceImg"
+             class="img-bg-responsive wrapper style4">
+        <div class="inner">
         </div>
     </section>
+
     <section class="spotlight">
-        <div class="image"><img src="/assets/imgs/pic03.jpg"
-                                alt=""/></div>
+        <div class="image">
+            {% include map-palace.html %}
+        </div>
         <div class="content">
-            <h2>Augue eleifend aliquet<br/>
-                sed condimentum</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
-                aenean mi ligula.</p>
+            <h2>Wesele</h2>
+            <div class="d-flex flex-column gap-2 mb-5">
+                Po ceremonii zapraszamy do wspólnego świętowania. Przyjęcie weselne odbędzie się w Pałacu Chojnata w
+                Woli-Chojnata 59.
+                <div class="d-flex flex-column gap-1 justify-content-between align-self-lg-start align-items-center">
+                    Adres: Wola-Chojnata 59, 96-230 Wola-Chojnata
+                    <div class="d-flex flex-column gap-4 mt-4 flex-md-row">
+                        <a href="https://maps.app.goo.gl/1T3CPU9SUdqD13UW7"
+                           class="button small">Google maps</a>
+                        <a href="https://palacchojnata.pl/ "
+                           class="button small">Pałac Chojnata</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <section id="moneyImg"
+             class="img-bg-responsive wrapper style4">
+        <div class="inner">
+            <h2>Zamiast kwiatów</h2>
+        </div>
+    </section>
+
+    <section class="spotlight">
+        <!--        TODO: wywalic lewa strone -->
+        <!--        <div class="image"><img src="/assets/imgs/onecoinonejar.jpg"-->
+        <!--                                alt=""/></div>-->
+        <div class="content pb-4">
+            <h2>Fundacja</h2>
+            <p>Wspólnie z Wami pragniemy pomóc. Będziemy wdzięczni, jeśli zamiast kwiatów, zdecydujecie się wesprzeć
+                naszą zbiórkę na rzecz Fundacji Dom w Łodzi. Pieniądze będziemy zbierać do puszki przed kościołem.</p>
+            <p>Fundacja „Dom w Łodzi” działa od sierpnia 2006 roku i jest organizacją pożytku publicznego. Powstała po
+                to, aby pomagać tym, którzy tej pomocy potrzebują bardziej niż ktokolwiek inny. Wspiera dzieci, którym
+                los odebrał nie tylko zdrowie, ale i miłość osób najbliższych. Jej celem jest stworzenie domu, w którym
+                najmłodsi zaznają bliskości, miłości i otrzymają szansę na szczęśliwe i zdrowe życie.</p>
+            <a href="https://www.domwlodzi.org/pl/"
+               class="button small mb-3">Więcej o fundacji</a>
+        </div>
+    </section>
+    <!--    <section class="spotlight">-->
+    <!--        <div class="image"><img src="/assets/imgs/pic03.jpg"-->
+    <!--                                alt=""/></div>-->
+    <!--        <div class="content">-->
+    <!--            <h2>Augue eleifend aliquet<br/>-->
+    <!--                sed condimentum</h2>-->
+    <!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam-->
+    <!--                aenean mi ligula.</p>-->
+    <!--        </div>-->
+    <!--    </section>-->
 </section>
 
-<!-- Two -->
-<section id="two"
-         class="wrapper alt style2">
-    <section class="spotlight">
-        <div class="image"><img src="/assets/imgs/pic01.jpg"
-                                alt=""/></div>
-        <div class="content">
-            <h2>Magna primis lobortis<br/>
-                sed ullamcorper</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
-                aenean mi ligula.</p>
-        </div>
-    </section>
-    <section class="spotlight">
-        <div class="image"><img src="/assets/imgs/pic02.jpg"
-                                alt=""/></div>
-        <div class="content">
-            <h2>Tortor dolore feugiat<br/>
-                elementum magna</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
-                aenean mi ligula.</p>
-        </div>
-    </section>
-    <section class="spotlight">
-        <div class="image"><img src="/assets/imgs/pic03.jpg"
-                                alt=""/></div>
-        <div class="content">
-            <h2>Augue eleifend aliquet<br/>
-                sed condimentum</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
-                aenean mi ligula.</p>
-        </div>
-    </section>
-</section>
-
-<!-- Three -->
-<section id="three"
+<section id="accomodation"
          class="wrapper style3 special">
     <div class="inner">
         <header class="major">
-            <h2>Accumsan mus tortor nunc aliquet</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br/>
-                fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+            <h2>Noclegi</h2>
+            <p>Zapewniamy noclegi dla wszystkich, którzy wyrażą taką chęć. Więcej informacji pojawi się bliżej terminu
+                uroczystości.</p>
+            <p><b>Prosimy o potwierdzenie obecności do 30 kwietnia 2025.</b></p>
         </header>
-        <ul class="features">
-            <li class="icon fa-paper-plane-o">
-                <h3>Arcu accumsan</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-            <li class="icon fa-laptop">
-                <h3>Ac Augue Eget</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-            <li class="icon fa-code">
-                <h3>Mus Scelerisque</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-            <li class="icon fa-headphones">
-                <h3>Mauris Imperdiet</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-            <li class="icon fa-heart-o">
-                <h3>Aenean Primis</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-            <li class="icon fa-flag-o">
-                <h3>Tortor Ut</h3>
-                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                    ligula consequat consequat.</p>
-            </li>
-        </ul>
     </div>
 </section>
 
-<!-- CTA -->
-<section id="cta"
-         class="wrapper style4">
+<section id="timePlan"
+         class="wrapper style3 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Plan</h2>
+            <p>Szczegółowy plan pojawi się bliżej terminu uroczystości.</p>
+        </header>
+    </div>
+</section>
+
+<section id="contact"
+         class="wrapper style3 special">
     <div class="inner">
         <header>
             <h2>Arcue ut vel commodo</h2>
@@ -187,3 +207,99 @@ layout: landing
         </ul>
     </div>
 </section>
+
+<!--&lt;!&ndash; Two &ndash;&gt;-->
+<!--<section id="two"-->
+<!--         class="wrapper alt style2">-->
+<!--    <section class="spotlight">-->
+<!--        <div class="image"><img src="/assets/imgs/pic01.jpg"-->
+<!--                                alt=""/></div>-->
+<!--        <div class="content">-->
+<!--            <h2>Magna primis lobortis<br/>-->
+<!--                sed ullamcorper</h2>-->
+<!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam-->
+<!--                aenean mi ligula.</p>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="spotlight">-->
+<!--        <div class="image"><img src="/assets/imgs/pic02.jpg"-->
+<!--                                alt=""/></div>-->
+<!--        <div class="content">-->
+<!--            <h2>Tortor dolore feugiat<br/>-->
+<!--                elementum magna</h2>-->
+<!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam-->
+<!--                aenean mi ligula.</p>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="spotlight">-->
+<!--        <div class="image"><img src="/assets/imgs/pic03.jpg"-->
+<!--                                alt=""/></div>-->
+<!--        <div class="content">-->
+<!--            <h2>Augue eleifend aliquet<br/>-->
+<!--                sed condimentum</h2>-->
+<!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam-->
+<!--                aenean mi ligula.</p>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Three &ndash;&gt;-->
+<!--<section id="three"-->
+<!--         class="wrapper style3 special">-->
+<!--    <div class="inner">-->
+<!--        <header class="major">-->
+<!--            <h2>Accumsan mus tortor nunc aliquet</h2>-->
+<!--            <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br/>-->
+<!--                fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>-->
+<!--        </header>-->
+<!--        <ul class="features">-->
+<!--            <li class="icon fa-paper-plane-o">-->
+<!--                <h3>Arcu accumsan</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--            <li class="icon fa-laptop">-->
+<!--                <h3>Ac Augue Eget</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--            <li class="icon fa-code">-->
+<!--                <h3>Mus Scelerisque</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--            <li class="icon fa-headphones">-->
+<!--                <h3>Mauris Imperdiet</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--            <li class="icon fa-heart-o">-->
+<!--                <h3>Aenean Primis</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--            <li class="icon fa-flag-o">-->
+<!--                <h3>Tortor Ut</h3>-->
+<!--                <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean-->
+<!--                    ligula consequat consequat.</p>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; CTA &ndash;&gt;-->
+<!--<section id="cta"-->
+<!--         class="wrapper style4">-->
+<!--    <div class="inner">-->
+<!--        <header>-->
+<!--            <h2>Arcue ut vel commodo</h2>-->
+<!--            <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>-->
+<!--        </header>-->
+<!--        <ul class="actions vertical">-->
+<!--            <li><a href="#"-->
+<!--                   class="button fit special">Activate</a></li>-->
+<!--            <li><a href="#"-->
+<!--                   class="button fit">Learn More</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</section>-->

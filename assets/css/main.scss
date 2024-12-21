@@ -16,9 +16,12 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 @import "external/font-awesome";
 //@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 
 @import "common";
 @import 'map';
+@import 'landing';
+@import 'image-bg';
 
 /*
 	Spectral by HTML5 UP
@@ -1503,9 +1506,9 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			@include vendor('transform', 'scale(1)');
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 3em;
 			opacity: 1;
-			padding: 0.35em 1em;
+			padding: 0.1em 1em;
 			position: relative;
 			z-index: 1;
 
@@ -1533,7 +1536,8 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 
 		p {
 			letter-spacing: _size(letter-spacing-alt);
-			text-transform: uppercase;
+			//text-transform: uppercase;
+			font-size: 2em;
 
 			a {
 				color: inherit;
@@ -1598,7 +1602,11 @@ $baseurl: '{{ site.baseurl }}/assets/imgs';
 			min-height: 0;
 
 			h2 {
-				font-size: 1.25em;
+				font-size: 2em;
+			}
+
+			p {
+				font-size: 1.5em;
 			}
 
 			br {
